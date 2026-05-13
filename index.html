@@ -161,12 +161,53 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;height:68px;display:flex;ali
 .hero-scroll span{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--text2)}
 .scroll-line{width:1px;height:40px;background:linear-gradient(to bottom,var(--gold),transparent)}
 
+
 /* PAGE HERO */
-.page-hero{min-height:38vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:120px 24px 70px;position:relative;overflow:hidden}
-.page-hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 60% 60% at 50% 50%,rgba(201,168,76,0.07) 0%,transparent 70%)}
-.page-hero-content{position:relative;z-index:1;animation:fadeUp 1s ease both}
-.page-title{font-family:var(--fd);font-size:clamp(40px,7vw,80px);font-weight:300;color:var(--white);line-height:1.1}
-.page-title em{font-style:italic;color:var(--gold-light)}
+.page-hero {
+  min-height: 58vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  padding: calc(68px + 52px) 24px 80px;
+  overflow: hidden;
+}
+
+.page-hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.page-hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.page-title {
+  font-family: var(--fd);
+  font-size: clamp(40px, 7vw, 80px);
+  font-weight: 300;
+  color: var(--white);
+  line-height: 1.1;
+}
+
+.page-title em {
+  font-style: italic;
+  color: var(--gold-light);
+}
+
+.org-hero-img {
+  background:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.85)),
+    url("https://umntclphie.weebly.com/uploads/1/4/8/3/148319477/copy-of-dsc-0292_orig.jpg");
+  background-size: cover;
+  background-position: center 85%;
+  background-repeat: no-repeat;
+}
 
 /* SECTIONS */
 .wrap{max-width:1200px;margin:0 auto;padding:80px 48px}
@@ -570,9 +611,10 @@ footer {
 </div><!-- /pg-home -->
 
 <!-- ===================== PAGE: OUR ORGANIZATION ===================== -->
- <div id="pg-org" class="page">
+<div id="pg-org" class="page">
   <div class="page-hero">
-    <div class="page-hero-bg"></div>
+    <div class="page-hero-bg org-hero-img"></div>
+    <div class="page-hero org-hero-img"></div>
     <div class="page-hero-content">
       <div class="eyebrow">Est. February 25, 1981</div>
       <h1 class="page-title">Our <em>Organization</em></h1>
@@ -640,7 +682,7 @@ footer {
     <div class="two-col">
       <div class="reveal">
         <p style="font-size:16px;line-height:1.9;color:var(--text);margin-bottom:20px">Our principal founders <strong style="color:var(--white)">Laajlim Khang, Thang Nguyen, and Devin Vue</strong> dreamt of creating and fostering another inclusive space for Asian-American males and their nuanced identities. They went on to recruit ten more men and eventually formed the interest group <strong style="color:var(--gold)">HEARTH</strong>.</p>
-        <p style="font-size:16px;line-height:1.9;color:var(--text);margin-bottom:20px">On <strong style="color:var(--white)">October 25, 2020</strong>, the University of Minnesota Associate Chapter of Lambda Phi Epsilon was officially established as the 75th chapter of the organization.</p>
+        <p style="font-size:16px;line-height:1.9;color:var(--text);margin-bottom:20px">On <strong style="color:var(--white)">October 25, 2020</strong>, the University of Minnesota Associate Chapter of Lambda Phi Epsilon was officially established as the 71st chapter of the organization.</p>
         <p style="font-size:16px;line-height:1.9;color:var(--text)">We are dedicated to fostering an inclusive space at UMN-Twin Cities — involved in leadership, educational, and advocacy initiatives, creating a safe space for our Asian-American community to celebrate our culture and connections.</p>
         <div style="margin-top:28px">
           <button class="btn-primary" onclick="goPage('brothers')">Meet Our Brothers</button>
